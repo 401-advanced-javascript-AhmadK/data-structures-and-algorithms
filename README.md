@@ -11,6 +11,7 @@ Table of Contents
   * [linked-lists](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/4)
   * [linked-lists-insertions](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/5)
   * [linked-lists-countBack](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/6)
+  * [linked-lists-merge](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/7)
 
 
 
@@ -33,3 +34,6 @@ Table of Contents
 
  ### Linked List CountBack
  this challenge focuses on looping through the linked-list in a reverse manner, and return the values in the linked list. 
+
+ ### linked List Merge
+ this challenge is about manipulating two Linked Lists, by merging them in alternating fashion.
