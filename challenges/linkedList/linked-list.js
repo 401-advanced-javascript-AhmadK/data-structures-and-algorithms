@@ -114,6 +114,33 @@ class LinkedList{
     }
   }
 
+  // k-th value from the end of a linked list.
+
+  llkthFromEnd(value){
+    let counter = this.head;
+    let nodeContent = null;
+    let nodeContentExist = false;
+    let countdown = value;
+
+    if (value < 0 ) null;
+
+    while(counter !== null){
+      if(countdown === 0 ) {
+        countdown--;
+        nodeContent = this.head;
+        nodeContentExist = true;
+      }
+      if(nodeContentExist && counter.next !== null ){
+        counter = counter.next;
+        nodeContent = nodeContent.next;
+      } else {
+        counter = counter.next;
+      }
+
+      if (countdown > 0 ) countdown--;
+    }
+    return nodeContentExist ? nodeContent.value : null;
+  }
 }
 
 module.exports = LinkedList;

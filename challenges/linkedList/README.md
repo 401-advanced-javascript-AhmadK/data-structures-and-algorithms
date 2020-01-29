@@ -16,8 +16,9 @@ time O (n)
 space O (n)
 
 ## Solution
-![array-shift](assets/Linked-List.jpg)
+![Linked-List](assets/Linked-List.jpg)
 
+===================================================================================================================
 
 # Challenge 06
 
@@ -37,4 +38,26 @@ time O (n)
 space O (n)
 
 ## Solution
-![array-shift](insert a node after the last node of the linked list)
+![Linked-List-Insertion](insert a node after the last node of the linked list)
+
+======================================================================================================================
+
+# Challenge 07
+
+# Linked List CountBack 
+
+# Challenge Summary
+a challenge for looping through the linked list in a reverse manner, get the correct values, and checks for abstract situations. 
+
+## Challenge Description
+loop through the linked list in a reverse manner to get specific values.
+
+## Approach & Efficiency
+the llkthFromEnd(), is a method built by using while loop, and if statements. to loop through the array in a reverse manner. 
+
+### Big O
+time O (n)
+space O (n)
+
+## Solution
+![Linked-List-CountBack](assets/linked-list-countBack.jpg)
