@@ -12,6 +12,8 @@ Table of Contents
   * [linked-lists-insertions](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/5)
   * [linked-lists-countBack](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/6)
   * [linked-lists-merge](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/7)
+  * [stack-and-queue](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/8)
+
 
 
 
@@ -37,3 +39,6 @@ Table of Contents
 
  ### linked List Merge
  this challenge is about manipulating two Linked Lists, by merging them in alternating fashion.
+
+ ### stack and queue 
+ a new topic, that talks about the stack and queues, how to handle them, like adding item, removing items and peeking the top or front node.
