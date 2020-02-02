@@ -52,6 +52,7 @@ class LinkedList{
     return listStringified.join(' ');
 
   }
+
   // Linked List insertion
 
   append( value ){
