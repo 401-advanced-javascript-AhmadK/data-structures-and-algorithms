@@ -13,6 +13,7 @@ Table of Contents
   * [linked-lists-countBack](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/6)
   * [linked-lists-merge](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/7)
   * [stack-and-queue](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/8)
+  * [queues-with-stacks](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/9)
 
 
 
@@ -37,8 +38,11 @@ Table of Contents
  ### Linked List CountBack
  this challenge focuses on looping through the linked-list in a reverse manner, and return the values in the linked list. 
 
- ### linked List Merge
+ ### Linked List Merge
  this challenge is about manipulating two Linked Lists, by merging them in alternating fashion.
 
- ### stack and queue 
+ ### Stack and Queue 
  a new topic, that talks about the stack and queues, how to handle them, like adding item, removing items and peeking the top or front node.
+
+ ### Queues with Stacks
+ 
