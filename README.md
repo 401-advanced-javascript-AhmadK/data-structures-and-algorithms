@@ -14,6 +14,7 @@ Table of Contents
   * [linked-lists-merge](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/7)
   * [stack-and-queue](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/8)
   * [queues-with-stacks](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/9)
+  * [multi-bracket-validation](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/10)
 
 
 
@@ -46,3 +47,6 @@ Table of Contents
 
  ### Queues with Stacks
  
+
+ ### Multi Brackets Validation 
+ this challenge is about validating balanced brackets, and validating a good opening and closing of the brackets. 
