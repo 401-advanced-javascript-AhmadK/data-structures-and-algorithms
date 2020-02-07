@@ -16,6 +16,7 @@ Table of Contents
   * [queues-with-stacks](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/9)
   * [fifo-animal-shelter](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/11)
   * [multi-bracket-validation](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/10)
+  * [binary-trees](https://github.com/401-advanced-javascript-AhmadK/data-structures-and-algorithms/pull/12)
 
 
 
@@ -53,4 +54,7 @@ Table of Contents
  this challenge is about working with queues in the First in First out terminology. 
 
  ### Multi Brackets Validation 
- this challenge is about validating balanced brackets, and validating a good opening and closing of the brackets. 
+ this challenge is about validating balanced brackets, and validating a good opening and closing of the brackets.
+
+ ### Binary-Trees
+ this challenge is about creating the traversing methods for the binary tree, and some basic methods for the binary search tree.
