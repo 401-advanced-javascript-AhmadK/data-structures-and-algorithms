@@ -126,5 +126,40 @@ describe('Binary Search Tree tests' , () => {
     expect(contain).toBeFalsy();
   });
 
+});
+
+describe('Binary trees Breadth First Traversal tests', () => {
+  let tree = null;
+   
+  beforeAll( () => {
+    let firstNode = new Node(1);
+    let secondNode = new Node(2);
+    let thirdNode = new Node(3);
+    let fourthNode = new Node(4);
+    let fifthNode = new Node(5);
+    let sixthNode = new Node(6);
+    let seventhNode = new Node(7);
+
+    firstNode.left = secondNode;
+    firstNode.right = thirdNode;
+    secondNode.left = fourthNode;
+    secondNode.right = fifthNode;
+    thirdNode.left = sixthNode;
+    thirdNode.right = seventhNode;
+
+    tree = new BinaryTree(firstNode);
+
+    console.log('tree postOrder()', tree.breadthFirst());
+
+  });
+
+  it('returns null if the Binary tree is Empty', () => {
+    let empty = new BinaryTree();
+    expect(empty.breadthFirst()).toBeNull();
+  });
+
+  it('breadthFirst() returns an array that is traversed in breadth First method', () => {
+    expect(tree.breadthFirst()).toEqual([1,2,3,4,5,6,7]);
+  });
 
 });

@@ -1,7 +1,6 @@
 'use strict';
 
 
-
 // create a BinaryTree class 
 class BinaryTree {
   constructor( root=null ){
@@ -55,6 +54,30 @@ class BinaryTree {
     _traverse(this.root);
     return outputArray;        
   }
+
+  // create a method named breadthFirst() ====> Done 
+  // accepts a tree ====> Done
+  breadthFirst(){
+    let breadthInOutput = [];
+    let queueTemp = [];
+
+    if ( this.root !== null ){
+      queueTemp.push(this.root);
+
+      while( queueTemp.length > 0 ){
+        let node = queueTemp.shift();
+        breadthInOutput.push(node.value);
+        if( node.left !== null ){
+          queueTemp.push(node.left);
+        }
+        if( node.right !== null ){
+          queueTemp.push(node.right);
+        }
+      }
+      return breadthInOutput;
+    } else return null;
+  }
 }
+
 
 module.exports = BinaryTree;
