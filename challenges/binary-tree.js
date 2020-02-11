@@ -77,7 +77,32 @@ class BinaryTree {
       return breadthInOutput;
     } else return null;
   }
+
+  // find the max value in the tree
+
+  findMaximumValue(){
+    let outputArray = [];
+    let maxValue = 0;
+
+    let _traverse = (node) => {
+    
+      if( node.left ) _traverse(node.left);
+      outputArray.push(node.value);
+      if( node.right ) _traverse(node.right);
+
+    };
+
+    _traverse(this.root);
+    
+    for( let i=0 ; i<outputArray.length ; i++ ){
+      if( outputArray[i] > maxValue ){
+        maxValue = outputArray[i];
+      }
+    }
+    return maxValue;
+  }
 }
+
 
 
 module.exports = BinaryTree;

@@ -100,8 +100,8 @@ describe('Binary Search Tree tests' , () => {
     searchTree = new BinarySearchTree(firstNode);
     let output = searchTree.add(375);
     console.log('search tree add()',output);
-    console.log('tree inOrder()', searchTree.contain('A'));    
-    console.log('tree inOrder(550)', searchTree.contain(550));
+    console.log('tree contain()', searchTree.contain('A'));    
+    console.log('tree contain(550)', searchTree.contain(550));
   });
 
   it('Can successfully instantiate an empty tree', () => {
@@ -149,7 +149,7 @@ describe('Binary trees Breadth First Traversal tests', () => {
 
     tree = new BinaryTree(firstNode);
 
-    console.log('tree postOrder()', tree.breadthFirst());
+    console.log('tree breadthFirst()', tree.breadthFirst());
 
   });
 
@@ -160,6 +160,42 @@ describe('Binary trees Breadth First Traversal tests', () => {
 
   it('breadthFirst() returns an array that is traversed in breadth First method', () => {
     expect(tree.breadthFirst()).toEqual([1,2,3,4,5,6,7]);
+  });
+
+});
+
+describe('Maximum value tests', () => {
+  let tree = null;
+   
+  beforeAll( () => {
+    let firstNode = new Node(1);
+    let secondNode = new Node(5);
+    let thirdNode = new Node(31);
+    let fourthNode = new Node(14);
+    let fifthNode = new Node(25);
+    let sixthNode = new Node(63);
+    let seventhNode = new Node(47);
+
+    firstNode.left = secondNode;
+    firstNode.right = thirdNode;
+    secondNode.left = fourthNode;
+    secondNode.right = fifthNode;
+    thirdNode.left = sixthNode;
+    thirdNode.right = seventhNode;
+
+    tree = new BinaryTree(firstNode);
+
+    console.log('tree findMaximumValue()', tree.findMaximumValue());
+
+  });
+
+  it('returns null if the Binary tree is Empty', () => {
+    let empty = new BinaryTree();
+    expect(empty.breadthFirst()).toBeNull();
+  });
+
+  it('findMaximumValue() returns the maximum value in the tree', () => {
+    expect(tree.findMaximumValue()).toEqual(63);
   });
 
 });
