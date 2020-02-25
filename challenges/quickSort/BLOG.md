@@ -39,7 +39,7 @@ The above pseudo code is for the quick sort method, that works on the idea of di
 
  In the code i specified the the pivot pint to be the middle point, because of Maximum stack error. 
 
-  A Visual representation is provided
+  A Visual representation is provided some details
 
   ![quick-sort](assets/quick-sort.jpg)
 
