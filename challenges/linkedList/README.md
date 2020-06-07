@@ -49,7 +49,7 @@ the append(), insertBefore() and insertAfter() methods are added to the class to
    #### append():
     time O (1)
     space O (1)
-    no iteration is done si the Big O(1) is present.
+    no iteration is done is the Big O(1) is present.
    
    #### insertBefore():
     time O (1)
