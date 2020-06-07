@@ -28,8 +28,9 @@ The class module is used in this challenge, with constructor and the insert(), i
     in the worst case it may iterate over the entire the linked list.
 
 ## Solution
-![array-shift](assets/Linked-List.jpg)
+![Linked-List](assets/Linked-List.jpg)
 
+===================================================================================================================
 
 # Challenge 06
 
@@ -61,4 +62,26 @@ the append(), insertBefore() and insertAfter() methods are added to the class to
    higher order functions are used.
 
 ## Solution
-![array-shift](insert a node after the last node of the linked list)
+![Linked-List-Insertion](insert a node after the last node of the linked list)
+
+======================================================================================================================
+
+# Challenge 07
+
+# Linked List CountBack 
+
+# Challenge Summary
+a challenge for looping through the linked list in a reverse manner, get the correct values, and checks for abstract situations. 
+
+## Challenge Description
+loop through the linked list in a reverse manner to get specific values.
+
+## Approach & Efficiency
+the llkthFromEnd(), is a method built by using while loop, and if statements. to loop through the array in a reverse manner. 
+
+### Big O
+time O (n)
+space O (n)
+
+## Solution
+![Linked-List-CountBack](assets/linked-list-countBack.jpg)
