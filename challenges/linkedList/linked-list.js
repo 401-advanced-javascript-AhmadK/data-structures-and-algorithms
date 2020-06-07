@@ -52,6 +52,67 @@ class LinkedList{
     return listStringified.join(' ');
 
   }
+  // Linked List insertion
+
+  append( value ){
+
+    if( this.head === null ){
+      this.head = new Node( value );
+    } else {
+      appendHandler( this.head, value );
+    }
+
+    function appendHandler ( currentNode, value ){
+      if( currentNode.next === null ){
+        let newNext = new Node( value );
+        currentNode.next = newNext;
+      } else {
+        currentNode = currentNode.next;
+        appendHandler( currentNode, value );
+      }
+    }
+
+  }
+
+  insertBefore( val, newVal ){
+
+    if( this.head === null){
+      this.head = new Node ( newVal );
+    } else {
+      findVal( this.head, val, newVal );
+    }
+
+    function findVal ( currentNode, val, newVal ){
+      if( currentNode.next.value === val ){
+        let newNode = new Node ( newVal );
+        newNode.next = currentNode.next;
+        currentNode.next = newNode;
+      } else {
+        currentNode = currentNode.next;
+        findVal( currentNode, val, newVal );
+      }
+    }
+  }
+
+  insertAfter( val, newVal ){
+
+    if( this.head === null){
+      this.head = new Node ( newVal );
+    } else {
+      findVal( this.head, val, newVal );
+    }
+
+    function findVal ( currentNode, val, newVal ){
+      if( currentNode.value === val ){
+        let newNode = new Node( newVal );
+        newNode.next = currentNode.next;
+        currentNode.next = newNode;
+      } else {
+        currentNode = currentNode.next;
+        findVal( currentNode, val, newVal );
+      }
+    }
+  }
 
 }
 

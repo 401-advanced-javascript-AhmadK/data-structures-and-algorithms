@@ -84,4 +84,87 @@ describe('linked List', () => {
     expect(list.toString()).toEqual('() => {} [object Object]  test true 1');
 
   });
+  test('insertBefore() add a node to the end of the linked list', () => {
+
+    let list = new LinkedList;
+    let array = [ 50,40,20,10 ];
+
+    array.forEach( value => {
+      list.insert( value );
+    });
+
+    let target = 40;
+    let newValue = 30;
+
+    list.insertBefore( target, newValue );
+
+    expect(list.toString()).toEqual('10 20 30 40 50');
+
+  });
+
+  test('insertBefore() add multiple nodes to the end of a linked list', () => {
+
+    let list = new LinkedList;
+
+    let target = 40;
+    let newValue = 30;
+
+    list.insertBefore( target, newValue );
+
+    expect(list.toString()).toEqual('30');
+
+  });
+
+  test('insertAfter()  insert a node before the first node of a linked list', () => {
+
+    let list = new LinkedList;
+
+    list.insertAfter( 10, 20 );
+
+    expect(list.toString()).toEqual('20');
+
+  });
+
+  test('insertAfter()  insert after a node in the middle of the linked list', () => {
+
+    let list = new LinkedList;
+    let array = [ 50,40,20,10 ];
+
+    array.forEach( value => {
+      list.insert( value );
+    });
+
+    let target = 20;
+    let newValue = 30;
+
+    list.insertAfter( target, newValue );
+
+    expect(list.toString()).toEqual('10 20 30 40 50');
+
+  });
+
+  test('append() insert a node after the last node of the linked list', () => {
+
+    let list = new LinkedList;
+    let array = [ 50,40,30,20,10 ];
+
+    array.forEach( value => {
+      list.insert( value );
+    });
+
+    list.append( 60 );
+
+    expect(list.toString()).toEqual('10 20 30 40 50 60');
+
+  });
+
+  test('append() can insert a node in an empty list', () => {
+
+    let list = new LinkedList;
+
+    list.append( 10 );
+
+    expect(list.toString()).toEqual('10');
+
+  });
 });
